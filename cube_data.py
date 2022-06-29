@@ -5,8 +5,8 @@ from dataclasses import dataclass
 
 @dataclass(init=False)
 class CubeData:
-    data: pd.DataFrame
-    columns: list
+    data=None
+    columns=[]
 
     def to_json()->'json':
         return self.data.to_json()
